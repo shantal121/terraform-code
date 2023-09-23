@@ -1,6 +1,4 @@
-provider "aws" {
-region = "aws_lightsail_instance" "example" 
-}
+resource "aws_lightsail_instance" "example-instance" {
   name              = "example-instance"
   availability_zone = "us-east-1a" 
   blueprint_id      = "amazon-linux-2-lts"
